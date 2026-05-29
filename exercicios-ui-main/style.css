@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor-subtitulos:#ad2d52;
+}
+
+body {
+    background: #fff8fb;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #854053, #c21543);
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    padding: 8px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background 0.5s;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,.15);
+}
+
+/*Seção do hero*/
+
+.hero {
+    height: 85vh;
+    background: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1400&auto=format&fit=crop') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 600px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    color: var(--cor-subtitulos);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 45px;
+    line-height: 1.6;
+}
+
+.btn {
+    background: linear-gradient(135deg, #854053, #c21543);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+.hero a {
+    text-decoration: none;
+}
+
+img { /*Formato das imagens*/
+    height: 330px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+/*seções*/
+
+.section-title {
+    color: var(--cor-subtitulos);
+    margin: 60px 0 60px 40px;
+    font-size: 2rem;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 40px;
+    margin: 0 0 40px 0;
+}
+
+.card {
+    margin: 0 0 40px 0;
+    background: #ebbbc8;
+    border-radius: 20px;
+}
+
+
+.card h3 {
+    font-size: 1.4rem;
+    padding: 15px 0 5px 10px;
+    color: #444;
+    text-align: center;
+}
+
+.card p {
+    font-size: 1.1rem;
+    padding: 10px 0 5px 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.price {
+    color: var(--cor-subtitulos);
+    padding: 10px 0 14px 15px;
+    font-size: 1.3rem;
+}
+
+.btn-button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #854053, #c21543);
+    color: white;
+    border: solid 2px white;
+    font-size: 1rem;
+    margin: 0 35% 20px;
+}
+
+.about {
+    background: #ffe4ec;
+    padding: 45px;
+    display: flex;
+}
+
+.about h2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about p {
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+}
+
+footer {
+      background: #898888;
+      padding: 25px;
+}
