@@ -4,7 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-:root {
+:root { /*variável definida*/
     --cor-subtitulos:#ad2d52;
 }
 
@@ -13,7 +13,9 @@ body {
     color: #333;
 }
 
-header {
+/*estilo do cabeçalho*/
+
+header { 
     background: linear-gradient(135deg, #854053, #c21543);
     color: white;
     padding: 20px 30px;
@@ -23,9 +25,15 @@ header {
     position: sticky;
 }
 
-header h1 {
+.inicio {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
     font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+/*estilo da navegação*/
 
 nav {
     display: flex;
@@ -55,6 +63,7 @@ nav a:hover {
     justify-content: center;
     text-align: center;
     padding: 20px;
+    box-shadow: 0 4px 35px rgba(0,0,0,.1);
 }
 
 .hero-content {
@@ -87,13 +96,14 @@ nav a:hover {
     text-decoration: none;
 }
 
-img { /*Formato das imagens*/
-    height: 330px;
+.card img { /*formato das imagens*/
     width: 400px;
+    height: 330px;
+    object-fit: cover;
     border-radius: 20px;
 }
 
-/*seções*/
+/*organização das imagens dos produtos à venda*/
 
 .section-title {
     color: var(--cor-subtitulos);
@@ -104,7 +114,7 @@ img { /*Formato das imagens*/
 .products {
     display: flex;
     justify-content: space-around;
-    align-items: stretch;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
     padding: 0 40px;
@@ -115,8 +125,8 @@ img { /*Formato das imagens*/
     margin: 0 0 40px 0;
     background: #ebbbc8;
     border-radius: 20px;
+    box-shadow: 0 4px 35px rgba(0,0,0,.1);
 }
-
 
 .card h3 {
     font-size: 1.4rem;
@@ -145,28 +155,40 @@ img { /*Formato das imagens*/
     color: white;
     border: solid 2px white;
     font-size: 1rem;
-    margin: 0 35% 20px;
+    display: block;
+    margin: 20px auto;
 }
+
+/*estilo do "sobre" do site*/
 
 .about {
     background: #ffe4ec;
     padding: 45px;
     display: flex;
+    flex-direction: column;
 }
 
-.about h2 {
+.section-title-about {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    margin-bottom: 35px;
+    font-size: 2rem;
+    color: var(--cor-subtitulos);
 }
 
 .about p {
     display: flex;
     align-items: flex-end;
     text-align: center;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #6d6d6d;
 }
 
-footer {
-      background: #898888;
-      padding: 25px;
+footer { /*estilo do footer*/
+    background: linear-gradient(135deg, #854053, #c21543);
+    padding: 65px;
+    text-align: center;
+    color: rgb(255, 255, 255);
 }
